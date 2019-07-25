@@ -31,7 +31,7 @@ header > nav {
 .nav-root li > a {
   border-bottom: 0;
   &:hover {
-    border-bottom: 2px solid black;
+    color: $blastorange;
   }
 }
 .nav-hamburger {
@@ -68,10 +68,6 @@ header > nav {
   width: 100%;
   font-weight: 700;
   overflow-y: scroll;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
   z-index: 500;
 }
 .nav-mobile.is-active {
@@ -89,8 +85,6 @@ header > nav {
 }
 .nav-mobile li {
   display: block;
-  // text-align: center;
-  // line-height: 1.1em;
   margin-bottom: $tiny;
 }
 .nav-mobile li a {
@@ -112,7 +106,7 @@ header > nav {
     margin-top: 0;
   }
 }
-.nav-mobile-secondary {
+.nav-mobile-features {
   list-style-type: circle;
   padding-left: 0;
 }

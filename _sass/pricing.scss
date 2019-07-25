@@ -1,0 +1,21 @@
+#pricing {
+  background-color: $blastblue;
+}
+
+.pricing-container {
+  background-color: white;
+  border-radius: 6px;
+  width: 90%;
+  margin: auto;
+}
+
+.pricing-header {
+  border-bottom-width: 8px;
+  border-color: $blastorange;
+  margin: 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.pricing-info {
+  padding: 34px;
+}

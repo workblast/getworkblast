@@ -5,12 +5,14 @@ main > header {
   justify-content: center;
 }
 hr {
-  border-bottom-width: 1px;
-  border-bottom-style: dotted;
   border-left: 0;
   border-right: 0;
   border-top: 0;
+}
+.dotted-hr {
   margin: $base 0;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
 }
 #intro {
   display: flex;
@@ -51,7 +53,7 @@ hr {
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   border-radius: 4px;
   cursor: pointer;
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 0 0;
   transition: all .15s ease;
   &:hover {
     -webkit-transform: translateY(-1px);
@@ -105,7 +107,7 @@ hr {
   margin-bottom: 0 !important;
   padding: $tiny $tiny 0 $tiny ;
 }
-#secondary {
+.secondary {
   padding: $large $large;
   margin: 0 auto;
   max-width: 1100px;
@@ -113,7 +115,6 @@ hr {
 .feature {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -131,6 +132,9 @@ hr {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
+}
+.feature-image-right {
+  justify-content: flex-start;
 }
 .feature-image img {
   width: 340px;
@@ -156,8 +160,8 @@ hr {
   .primary-root {
     padding: 32px;
   }
-  #secondary {
-    padding: 48px 32px 0 32px;
+  .secondary {
+    padding: 48px 32px;
   }
   #splash {
     flex-direction: column;
@@ -184,6 +188,7 @@ hr {
     margin: 0 0 20px 0;
   }
   .feature {
+    flex-wrap: wrap;
     margin-bottom: 40px;
   }
   .feature-image img {
