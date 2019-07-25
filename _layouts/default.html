@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <!-- {% include banner.html %} -->
+    <header class="container">
+      {% include navigation.html %}
+    </header>
+    {{ content }}
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    var navMobile = document.querySelector(".nav-mobile");
+    var navMobileFade = document.querySelector(".nav-mobile-fade");
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+      hamburger.classList.toggle("hamburger--slider");
+      navMobile.classList.toggle("is-active");
+      navMobileFade.classList.toggle("is-active");
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+        ],
+        ignoredTags: [
+          "script", "noscript", "style", "textarea", "pre", "code",
+        ],
+      });
+      var nodes = document.querySelectorAll('script[type="math/tex; mode=display"]');
+      for (var i = 0; i < nodes.length; i++) {
+        var tex = nodes[i].innerHTML;
+        var markup = "<div class=\"equation\">" +
+          katex.renderToString(tex, { displayMode: true }) +
+          "</div>";
+        nodes[i].outerHTML = markup;
+      }
+    });
+  </script>
+</html>

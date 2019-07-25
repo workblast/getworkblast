@@ -1,0 +1,28 @@
+//
+// VARIABLES
+//
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+$blastblue: #1e366c;
+$blastorange: #f78f2a;
+
+$tiny: 8px;
+$small: 16px;
+$base: 24px;
+$large: 48px;
+$xlarge: 64px;
+
+$h1: 56px;
+$h2: 36px;
+$h3: 28px;
