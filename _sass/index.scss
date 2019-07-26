@@ -108,10 +108,13 @@ hr {
   padding: $tiny $tiny 0 $tiny ;
 }
 .secondary {
-  padding: $large $large;
+  padding: $large $xlarge;
   margin: 0 auto;
   max-width: 1100px;
 }
+// #features {
+//   padding: 0 40px;
+// }
 .feature {
   display: flex;
   flex-direction: row;
@@ -132,12 +135,14 @@ hr {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
+  padding-right: 40px;
 }
 .feature-image-right {
   justify-content: flex-start;
+  padding-left: 40px;
 }
 .feature-image img {
-  width: 340px;
+  width: 280px;
 }
 
 @media (max-width: 895px) {
@@ -191,8 +196,11 @@ hr {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
+  .feature-image, .feature-image-right {
+    padding: 0
+  }
   .feature-image img {
-    width: 250px;
+    width: 240px;
   }
 }
 @media (max-width: 480px) {
