@@ -1,19 +1,8 @@
 # Site settings
 title: "WorkBlast"
-description: "Streamlined shift trading. Takes all the hassle out of offering and picking up shifts."
-keywords: "shift,trade"
+description: "Streamlined shift trading. WorkBlast takes all the hassle out of offering and picking up shifts."
+keywords: "shift,trade,schedule"
 locale: "en-US"
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: Telegram
-    url: https://t.me.workblast
-  - title: Twitter
-    url: https://twitter.com/work_blast
-  - title: LinkedIn
-    url: https://linkedin.com/company/workblast
-  - title: Github
-    url: https://github.com/workblast
 
 # Build settings
 markdown: kramdown
